@@ -13,9 +13,11 @@ class MyClient(discord.Client):
         if message.author.id == self.user.id:
             return
         if message.content.startswith('!help'):
-            await message.channel.send('The doccumentation for this bot is located at XXX !')
-        if message.content.startswith('!clone'):
-            await message.channel.send('The temp text channel was created!  {0.author.mention}'.format(message))
-            await message.channel.clone()
+            await message.channel.send('The doccumentation for this bot is located at https://github.com/MattKeeley/Discord-Bot !')
+        if message.content.startswith('!ctemp'):
+            await message.channel.send('The temp channel was cleared!  {0.author.mention}'.format(message))
+            await message.channel.clone(name="temp")
+            await message.channel.delete()
+
 client = MyClient()
 client.run()
