@@ -3,5 +3,5 @@ This is the discord bot for DevilSec. It is currently a work in progress!
 
 
 # Commands:
-    !clone- Will clone the channel you type the command in. Does not copy the messages but will copy the permissions set on the channel. Very useful for making a temp channel.
+    !ctemp- Will clone the temp channel. This allows us to quickly setup a temperary channel either for walk throughs or just general notes.
     !help- Tells you where the documentation can be found.
